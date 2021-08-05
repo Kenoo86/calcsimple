@@ -43,17 +43,14 @@ class _HomeScreenState extends State<HomeScreen> {
         body: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextField(
-                  controller: inputnum,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10)),
-                    labelText: 'Enter Value',
-                  ),
-                  keyboardType: TextInputType.number,
+              TextField(
+                controller: inputnum,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                  labelText: 'Enter Value',
                 ),
+                keyboardType: TextInputType.number,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 30),
